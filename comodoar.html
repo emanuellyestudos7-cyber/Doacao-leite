@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Doação de Leite Materno</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              "primary": "#19e65e",
+              "background-light": "#f6f8f6",
+              "background-dark": "#112116",
+              "text-light": "#111813",
+              "text-dark": "#f0f4f2",
+              "card-light": "#ffffff",
+              "card-dark": "#1a2c20",
+              "subtle-light": "#63886f",
+              "subtle-dark": "#a0bda8",
+              "border-light": "#dce5df",
+              "border-dark": "#2a4232",
+            },
+            fontFamily: {
+              "display": ["Lexend", "sans-serif"]
+            },
+            borderRadius: {"DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px"},
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+            'FILL' 0,
+            'wght' 400,
+            'GRAD' 0,
+            'opsz' 24
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex h-auto min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<!-- Header -->
+<header class="sticky top-0 z-50 flex items-center justify-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-solid border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-3">
+<div class="text-primary text-3xl">
+<span class="material-symbols-outlined">volunteer_activism</span>
+</div>
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Doação de Leite</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-8">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#quem-pode-doar">Quem Pode Doar</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#beneficios">Benefícios</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#processo">Processo</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="#faq">FAQ</a>
+</nav>
+<div class="flex justify-end">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Registe-se Agora</span>
+</button>
+</div>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-5">
+<div class="flex flex-col w-full max-w-4xl px-4 sm:px-6 lg:px-8 gap-16 md:gap-24">
+<!-- Hero Section -->
+<section class="@container">
+<div class="flex min-h-[480px] flex-col gap-6 bg-cover bg-center bg-no-repeat @[480px]:gap-8 @[480px]:rounded-xl items-center justify-center p-4 text-center" data-alt="Imagem suave de uma mãe a segurar o seu bebé com carinho." style='background-image: linear-gradient(rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.4) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuDV69bFaA7hXdDYiEAyoT7LXS6YY1QP2zyrf23y3NMPSElRKufwUtE-DOOPLimTW0-sxi90_ffpyHWVaR-vSBHvhOGehOwTi0j52NrEwl23aYUJSHzgJFw1ve3pa9DUXTLDxNl2_Eksev48CVeMrjF-cENar32vztwv53_e_zhRB3Jlr3E2TDDytAS1UjLJCHDUuBOB89vmvdKNVsNjcEf3esYj3SvM7hsgDuxcJNxBIibKGNHJa_zVN7i0pHC-7v6ASGFk-GXHG5NB");'>
+<div class="flex flex-col gap-2 max-w-2xl">
+<h1 class="text-white text-4xl font-black leading-tight tracking-[-0.033em] @[480px]:text-5xl">
+                                A sua doação de leite materno pode salvar vidas
+                            </h1>
+<p class="text-white text-base font-normal leading-normal @[480px]:text-lg">
+                                Descubra como pode ajudar bebés prematuros e doentes com um gesto de amor.
+                            </p>
+</div>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-black text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Quero Doar</span>
+</button>
+</div>
+</section>
+<!-- Quem Pode Ajudar? Section -->
+<section class="flex flex-col gap-4 text-center items-center" id="quem-pode-doar">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Quem Pode Ajudar?</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-normal max-w-2xl">
+                        Para se tornar uma doadora, é essencial que cumpra alguns requisitos para garantir a segurança e a qualidade do leite. Verifique se preenche os seguintes critérios:
+                    </p>
+<div class="w-full max-w-2xl mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark text-left flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">health_and_safety</span>
+<div>
+<h3 class="font-bold text-base">Ser Saudável</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Não ter doenças infeciosas transmissíveis pelo leite.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark text-left flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">local_drink</span>
+<div>
+<h3 class="font-bold text-base">Ter Excesso de Leite</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Produzir mais leite do que o seu bebé necessita.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark text-left flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">smoke_free</span>
+<div>
+<h3 class="font-bold text-base">Não Fumar</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Não ser fumadora nem utilizar produtos de nicotina.</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark text-left flex items-start gap-4">
+<span class="material-symbols-outlined text-primary text-2xl mt-1">no_drinks</span>
+<div>
+<h3 class="font-bold text-base">Não Consumir Álcool ou Drogas</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Não fazer uso de substâncias prejudiciais para o bebé.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Benefícios Section -->
+<section class="flex flex-col gap-8 text-center items-center" id="beneficios">
+<div class="flex flex-col gap-4">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">O Impacto da Sua Doação</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-normal max-w-2xl">
+                            O leite materno é o alimento mais completo para os recém-nascidos. A sua doação é vital para os bebés que não podem ser amamentados pelas suas mães.
+                        </p>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+<div class="flex flex-col items-center gap-4 bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">child_care</span>
+</div>
+<h3 class="text-lg font-bold">Nutrição Essencial</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Fornece os nutrientes perfeitos para o desenvolvimento de bebés prematuros e doentes.</p>
+</div>
+<div class="flex flex-col items-center gap-4 bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">verified_user</span>
+</div>
+<h3 class="text-lg font-bold">Proteção e Imunidade</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Ajuda a proteger contra infeções e a fortalecer o sistema imunitário dos bebés mais frágeis.</p>
+</div>
+<div class="flex flex-col items-center gap-4 bg-card-light dark:bg-card-dark p-6 rounded-lg border border-border-light dark:border-border-dark sm:col-span-2 lg:col-span-1">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary/20 text-primary">
+<span class="material-symbols-outlined text-3xl">favorite</span>
+</div>
+<h3 class="text-lg font-bold">Um Ato de Amor</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Oferece esperança e saúde, sendo um dos presentes mais valiosos que se pode dar.</p>
+</div>
+</div>
+</section>
+<!-- Processo Section -->
+<section class="flex flex-col gap-8 items-center" id="processo">
+<div class="text-center flex flex-col gap-4">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">O Seu Guia Para Doar</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-normal max-w-2xl">
+                            O processo é simples e seguro. Estamos aqui para a apoiar em cada passo do caminho.
+                        </p>
+</div>
+<div class="w-full flex flex-col gap-8">
+<div class="flex items-center gap-6 md:gap-8">
+<div class="flex flex-col items-center">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-black font-bold text-xl">1</div>
+<div class="w-0.5 h-16 bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold">Registo Inicial</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Preencha o nosso formulário online. A nossa equipa entrará em contacto consigo para os próximos passos.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 md:gap-8">
+<div class="flex flex-col items-center">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-black font-bold text-xl">2</div>
+<div class="w-0.5 h-16 bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold">Avaliação de Saúde</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Será agendada uma consulta e exames de sangue gratuitos para garantir a segurança do leite.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 md:gap-8">
+<div class="flex flex-col items-center">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-black font-bold text-xl">3</div>
+<div class="w-0.5 h-16 bg-border-light dark:bg-border-dark"></div>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold">Recolha e Armazenamento</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Receberá um kit de recolha e instruções sobre como extrair e armazenar o seu leite em segurança.</p>
+</div>
+</div>
+<div class="flex items-center gap-6 md:gap-8">
+<div class="flex flex-col items-center">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-primary text-black font-bold text-xl">4</div>
+</div>
+<div class="flex-1">
+<h3 class="text-lg font-bold">Entrega ao Banco de Leite</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Coordenaremos a recolha do leite doado na sua casa ou num ponto de entrega conveniente.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ Section -->
+<section class="flex flex-col gap-8 items-center" id="faq">
+<div class="text-center flex flex-col gap-4">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Dúvidas Comuns</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-normal max-w-2xl">
+                            Encontre respostas para as perguntas mais frequentes sobre a doação de leite materno.
+                        </p>
+</div>
+<div class="w-full max-w-3xl flex flex-col gap-2">
+<details class="group bg-card-light dark:bg-card-dark p-4 rounded-lg border border-border-light dark:border-border-dark cursor-pointer">
+<summary class="flex items-center justify-between font-medium text-base list-none">
+                                A doação pode prejudicar a amamentação do meu bebé?
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-2">Não. A doação é feita apenas com o leite excedente, ou seja, aquele que o seu bebé não consome. A amamentação do seu filho deve ser sempre a prioridade.</p>
+</details>
+<details class="group bg-card-light dark:bg-card-dark p-4 rounded-lg border border-border-light dark:border-border-dark cursor-pointer">
+<summary class="flex items-center justify-between font-medium text-base list-none">
+                                Tenho de pagar alguma coisa para doar?
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-2">Não. A doação é um ato voluntário e altruísta. Todos os custos relacionados com os exames e o kit de recolha são cobertos pelo banco de leite.</p>
+</details>
+<details class="group bg-card-light dark:bg-card-dark p-4 rounded-lg border border-border-light dark:border-border-dark cursor-pointer">
+<summary class="flex items-center justify-between font-medium text-base list-none">
+                                Como é garantida a segurança do leite doado?
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-2">Todas as dadoras passam por uma rigorosa triagem de saúde. Além disso, todo o leite doado é pasteurizado para eliminar quaisquer bactérias ou vírus, garantindo a sua total segurança para os bebés recetores.</p>
+</details>
+<details class="group bg-card-light dark:bg-card-dark p-4 rounded-lg border border-border-light dark:border-border-dark cursor-pointer">
+<summary class="flex items-center justify-between font-medium text-base list-none">
+                                Por quanto tempo posso doar?
+                                <span class="material-symbols-outlined transition-transform duration-300 group-open:rotate-180">expand_more</span>
+</summary>
+<p class="text-sm text-subtle-light dark:text-subtle-dark mt-2">Pode doar enquanto estiver a amamentar e tiver produção de leite excedente. Não há um limite de tempo fixo, e pode parar a qualquer momento se assim o desejar.</p>
+</details>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="bg-card-light dark:bg-card-dark rounded-xl p-8 md:p-12 flex flex-col items-center text-center gap-6">
+<h2 class="text-3xl font-bold leading-tight tracking-[-0.015em]">Junte-se a Nós e Salve Vidas</h2>
+<p class="text-subtle-light dark:text-subtle-dark text-base font-normal leading-normal max-w-xl">
+                        O seu gesto pode fazer toda a diferença na vida de um recém-nascido. Dê o primeiro passo hoje mesmo e torne-se uma heroína.
+                    </p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-black text-base font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Registar para Doar</span>
+</button>
+</section>
+</div>
+</main>
+<!-- Footer -->
+<footer class="flex justify-center border-t border-solid border-border-light dark:border-border-dark mt-16">
+<div class="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-8 gap-4">
+<p class="text-sm text-subtle-light dark:text-subtle-dark">© 2024 Doação de Leite Materno. Todos os direitos reservados.</p>
+<div class="flex gap-6">
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="#">Política de Privacidade</a>
+<a class="text-sm text-subtle-light dark:text-subtle-dark hover:text-primary transition-colors" href="#">Termos de Uso</a>
+</div>
+</div>
+</footer>
+</div>
+</body></html>
