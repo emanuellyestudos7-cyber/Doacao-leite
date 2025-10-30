@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Doação de Leite Materno</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#4ade80", // vibrant but soft green-aqua
+            "background-light": "#fef7f4", // light peach/pink tone
+            "background-dark": "#2c1a13",
+            "text-light": "#574a44",
+            "text-dark": "#e0d9d6",
+            "accent": "#f97316", // coral/orange accent
+            "surface-light": "#ffffff",
+            "surface-dark": "#3d251a",
+            "border-light": "#fbece6",
+            "border-dark": "#4e3022",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "0.75rem",
+            "xl": "1rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<!-- TopNavBar -->
+<header class="sticky top-0 z-50 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="px-4 md:px-10 lg:px-20 mx-auto max-w-7xl">
+<div class="flex items-center justify-between whitespace-nowrap border-b border-solid border-border-light dark:border-border-dark py-4">
+<div class="flex items-center gap-4 text-text-light dark:text-text-dark">
+<div class="text-primary">
+<span class="material-symbols-outlined text-4xl">volunteer_activism</span>
+</div>
+<h2 class="text-xl font-bold leading-tight tracking-tighter">Gota de Amor</h2>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-8">
+<a class="text-sm font-medium leading-normal hover:text-accent dark:hover:text-accent transition-colors" href="#">Como Doar</a>
+<a class="text-sm font-medium leading-normal hover:text-accent dark:hover:text-accent transition-colors" href="#">Benefícios</a>
+<a class="text-sm font-medium leading-normal hover:text-accent dark:hover:text-accent transition-colors" href="#">FAQ</a>
+<a class="text-sm font-medium leading-normal hover:text-accent dark:hover:text-accent transition-colors" href="#">Testemunhos</a>
+</nav>
+<div class="flex items-center justify-end">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-6 bg-accent text-white text-sm font-bold leading-normal tracking-wide shadow-sm hover:bg-accent/90 transition-colors">
+<span class="truncate">Registar Agora</span>
+</button>
+</div>
+</div>
+</div>
+</header>
+<main class="flex-1">
+<!-- HeroSection -->
+<section class="px-4 md:px-10 lg:px-20 py-10 md:py-20">
+<div class="mx-auto max-w-7xl">
+<div class="min-h-[500px] flex flex-col gap-6 bg-cover bg-center bg-no-repeat rounded-xl items-center justify-center p-8 text-center" data-alt="A serene image of a mother gently holding her baby, symbolizing care and donation." style='background-image: linear-gradient(rgba(17, 33, 22, 0.4) 0%, rgba(17, 33, 22, 0.6) 100%), url("https://lh3.googleusercontent.com/aida-public/AB6AXuC0RWPDVA86Z2zQn45tFF-BmXH7dRgQLxVoqG9soaLKleUH2uQIaHW5ixOgTx17brx3yPFgtG2_dMei28JiEICYIZ1Q1O1_SJmqDOB3a2ohvuQW1-qLLYaESKZP_EKvU6HXjLVBJgP63hI-mO6bz1S6chKA-LKxSGgI3zjWe_mCgVYpksEpqVQr7IdntF1hQzzBHWUQ4mNB3QLLuuGqaDuOADhl-1E7wEpD7RwHj1PrboDZc0n6eSRfgDGdSBXWu3LDYjwbfubrU-ee");'>
+<div class="flex flex-col gap-4 max-w-3xl">
+<h1 class="text-white text-4xl md:text-5xl lg:text-6xl font-black leading-tight tracking-tighter">Uma Gota de Amor, Uma Vida de Esperança</h1>
+<h2 class="text-white/90 text-base md:text-lg font-normal leading-normal">Junte-se a nós e partilhe o poder do seu leite materno. Ajude a salvar a vida de recém-nascidos prematuros.</h2>
+</div>
+<div class="flex flex-wrap gap-4 justify-center mt-4">
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-primary text-background-dark text-base font-bold leading-normal tracking-wide shadow-lg hover:bg-primary/90 transition-colors">
+<span class="truncate">Quero Doar</span>
+</button>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-6 bg-surface-light/30 backdrop-blur-sm text-white text-base font-bold leading-normal tracking-wide hover:bg-surface-light/50 transition-colors">
+<span class="truncate">Saber Mais</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Information Cards Section -->
+<section class="px-4 md:px-10 lg:px-20 py-10 md:py-20">
+<div class="mx-auto max-w-7xl">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-text-light dark:text-text-dark">Porque a sua doação é tão importante</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6 text-center items-center shadow-sm">
+<div class="text-primary text-4xl mb-2">
+<span class="material-symbols-outlined text-5xl">health_and_safety</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-bold leading-tight">Salva Vidas</h3>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">O seu leite é um alimento vital para bebés prematuros e doentes, protegendo-os de infeções graves.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6 text-center items-center shadow-sm">
+<div class="text-primary text-4xl mb-2">
+<span class="material-symbols-outlined text-5xl">eco</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-bold leading-tight">Nutrição Essencial</h3>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">Fornece os nutrientes perfeitos que mais nenhum outro alimento consegue igualar para o desenvolvimento do bebé.</p>
+</div>
+</div>
+<div class="flex flex-col gap-4 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6 text-center items-center shadow-sm">
+<div class="text-primary text-4xl mb-2">
+<span class="material-symbols-outlined text-5xl">groups</span>
+</div>
+<div class="flex flex-col gap-1">
+<h3 class="text-xl font-bold leading-tight">Apoio Comunitário</h3>
+<p class="text-sm font-normal leading-normal text-text-light/80 dark:text-text-dark/80">Faça parte de uma comunidade de mães solidárias que se apoiam mutuamente nesta jornada de dádiva.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- How it Works Section -->
+<section class="px-4 md:px-10 lg:px-20 py-10 md:py-20 bg-surface-light dark:bg-surface-dark">
+<div class="mx-auto max-w-7xl">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-text-light dark:text-text-dark">Como funciona o processo</h2>
+<p class="mt-4 max-w-2xl mx-auto text-base text-text-light/80 dark:text-text-dark/80">O nosso processo é simples, seguro e pensado para si. Em apenas 3 passos pode fazer a diferença.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+<div class="flex flex-col items-center gap-4">
+<div class="flex items-center justify-center size-16 rounded-full bg-primary/20 text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">edit_document</span>
+</div>
+<h3 class="text-xl font-bold">1. Registo</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Preencha o nosso formulário online. É rápido, fácil e o primeiro passo para se tornar uma doadora.</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="flex items-center justify-center size-16 rounded-full bg-primary/20 text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">checklist</span>
+</div>
+<h3 class="text-xl font-bold">2. Avaliação</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">A nossa equipa entrará em contacto para uma breve avaliação de saúde, garantindo a segurança de todos.</p>
+</div>
+<div class="flex flex-col items-center gap-4">
+<div class="flex items-center justify-center size-16 rounded-full bg-primary/20 text-primary mb-4">
+<span class="material-symbols-outlined text-3xl">local_shipping</span>
+</div>
+<h3 class="text-xl font-bold">3. Recolha</h3>
+<p class="text-sm text-text-light/80 dark:text-text-dark/80">Fornecemos todo o material necessário e agendamos a recolha do leite doado em sua casa, com toda a comodidade.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Testimonials Section -->
+<section class="px-4 md:px-10 lg:px-20 py-10 md:py-20">
+<div class="mx-auto max-w-7xl">
+<div class="text-center mb-12">
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-tighter text-text-light dark:text-text-dark">Histórias que Inspiram</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<div class="flex flex-col justify-between gap-6 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6 shadow-sm">
+<p class="text-base text-text-light/90 dark:text-text-dark/90 italic">"Doar foi uma das experiências mais gratificantes da minha vida. Saber que pude ajudar um bebé tão pequeno a ficar mais forte não tem preço."</p>
+<div class="flex items-center gap-4">
+<img class="size-12 rounded-full object-cover" data-alt="Photo of Sofia L." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCY_hbMLFVjNlIsAtKjtyklyl7QtEWe8yR_s9CPzXyVBu-EXchb8EqriW3G__VjWFUNTYDP0faCv-5bYzAj_FlLRfJp3RhFZVXvIP1ULxF2glnW9TFNTUcKaWKP-yuBuvCJQP0W8X1ITFV1ByiGs8sixrlFwWXn_i9UZ6n65vVIyq4WOhrv_ee-K15OVOPu-34P739kDDTYp4iJv5Kmip4UwcEIdQiqjNNdVFGW9dRNlQ30EgCELZhWykv1OcZ45Kuv76RzBomxkSOU"/>
+<div>
+<p class="font-bold">Sofia L.</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Mãe Doadora</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between gap-6 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6 shadow-sm">
+<p class="text-base text-text-light/90 dark:text-text-dark/90 italic">"O meu filho nasceu prematuro e o leite doado foi essencial para a sua recuperação. Serei eternamente grata a cada mãe que doa."</p>
+<div class="flex items-center gap-4">
+<img class="size-12 rounded-full object-cover" data-alt="Photo of Marta C." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAgDbGnMoQhkdSYzI1LlYs1l4_RJHzpkwjIxL8FYc8ujkj_vM9-1Dn3O_FXFvXnOger4gIpJPiOCLgjZqjlK4bg9_ZlFsP3oRSQI71jf4dVRWJg97WJY1ifksfhQN4tadembbYfAoOS-OaUgDg8UA3lzfninfQyAJLFrBE6HKu56FatV2y7ILTSmjHyW54kOFdKZw4Cv1FIbrMbFLWlq7yF0UxRC-7AiSQy7a_bs5C0ajLPzt9gBTs4BzQq74LJ9RsxYgJLRHW-YIcx"/>
+<div>
+<p class="font-bold">Marta C.</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Mãe de Receptor</p>
+</div>
+</div>
+</div>
+<div class="flex flex-col justify-between gap-6 rounded-xl border border-border-light dark:border-border-dark bg-surface-light dark:bg-surface-dark p-6 shadow-sm">
+<p class="text-base text-text-light/90 dark:text-text-dark/90 italic">"Tinha excesso de produção de leite e não queria desperdiçar. A equipa foi super atenciosa e tornou todo o processo muito fácil."</p>
+<div class="flex items-center gap-4">
+<img class="size-12 rounded-full object-cover" data-alt="Photo of Joana R." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFTH-BXXuFt91AUU6jpzRyhri04Hpr4ehItq2ZnHk0vBdDv8wX9QfXN9blRRqM6YW2Rp_5c2littOvfLlSFcCae1DXw-p04s7T-GlGEIZYjYlMnHGiAGQGp1CqWXoY42Ju2tDslPyRsYWu8lknBDyCn_jL4Nw_lwb5y0D2zDh8wlc2fO2bH92h2u1GlNZ0b_NiEyZfVVRcjWzOA-WJU4yEaAaU_e1cJv8p43qLq2THJZfjyDJKMSp_kcdqZQcVUJpN2DSTsayNqquM"/>
+<div>
+<p class="font-bold">Joana R.</p>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70">Mãe Doadora</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Final CTA Section -->
+<section class="px-4 md:px-10 lg:px-20 py-10 md:py-20">
+<div class="mx-auto max-w-4xl bg-surface-light dark:bg-surface-dark rounded-xl p-8 md:p-12 text-center shadow-lg">
+<h2 class="text-3xl md:text-4xl font-bold leading-tight tracking-tighter">Faça Parte Desta Corrente de Amor</h2>
+<p class="mt-4 text-base text-text-light/80 dark:text-text-dark/80">O seu gesto pode mudar o futuro de um bebé. Junte-se a nós hoje e faça a diferença.</p>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-accent text-white text-base font-bold leading-normal tracking-wide shadow-md hover:bg-accent/90 transition-colors mt-8 mx-auto">
+<span class="truncate">Registar para Doar</span>
+</button>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-light dark:bg-surface-dark border-t border-border-light dark:border-border-dark">
+<div class="mx-auto max-w-7xl px-4 md:px-10 lg:px-20 py-12">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<div class="col-span-1 md:col-span-2">
+<div class="flex items-center gap-3 text-text-light dark:text-text-dark mb-4">
+<div class="text-primary">
+<span class="material-symbols-outlined text-3xl">volunteer_activism</span>
+</div>
+<h2 class="text-lg font-bold">Gota de Amor</h2>
+</div>
+<p class="text-sm text-text-light/70 dark:text-text-dark/70 max-w-sm">Conectando mães doadoras a bebés que precisam. Uma iniciativa para fortalecer os nossos pequenos guerreiros.</p>
+</div>
+<div>
+<h3 class="font-bold mb-4">Navegação</h3>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-accent dark:hover:text-accent transition-colors" href="#">Como Doar</a></li>
+<li><a class="hover:text-accent dark:hover:text-accent transition-colors" href="#">Benefícios</a></li>
+<li><a class="hover:text-accent dark:hover:text-accent transition-colors" href="#">FAQ</a></li>
+<li><a class="hover:text-accent dark:hover:text-accent transition-colors" href="#">Testemunhos</a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-bold mb-4">Contacto</h3>
+<ul class="space-y-2 text-sm text-text-light/70 dark:text-text-dark/70">
+<li>Email: info@gotadeamor.pt</li>
+<li>Telefone: +351 123 456 789</li>
+</ul>
+<div class="flex gap-4 mt-4">
+<!-- Social Icons would go here -->
+</div>
+</div>
+</div>
+<div class="mt-12 border-t border-border-light dark:border-border-dark pt-8 text-center text-xs text-text-light/60 dark:text-text-dark/60">
+<p>© 2024 Gota de Amor. Todos os direitos reservados.</p>
+</div>
+</div>
+</footer>
+</div>
+</div>
+</body></html>
