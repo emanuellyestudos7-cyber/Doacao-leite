@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html class="light" lang="pt"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Recursos e Apoio - Doação de Leite Materno</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#19e65e",
+            "background-light": "#f6f8f6",
+            "background-dark": "#112116",
+          },
+          fontFamily: {
+            "display": ["Lexend", "sans-serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+    }
+  </style>
+</head>
+<body class="font-display bg-background-light dark:bg-background-dark">
+<div class="relative flex w-full flex-col group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<div class="flex flex-1 justify-center py-5 sm:px-6 md:px-10 lg:px-20 xl:px-40">
+<div class="layout-content-container flex flex-col max-w-[960px] flex-1">
+<!-- Page Heading -->
+<div class="flex flex-wrap justify-between gap-3 p-4">
+<div class="flex min-w-72 flex-col gap-3">
+<p class="text-[#111813] dark:text-white text-4xl font-black leading-tight tracking-[-0.033em]">Recursos e Apoio</p>
+<p class="text-[#63886f] dark:text-gray-300 text-base font-normal leading-normal">Encontre artigos, testemunhos e grupos de apoio para a sua jornada.</p>
+</div>
+</div>
+<!-- Search Bar -->
+<div class="px-4 py-3">
+<label class="flex flex-col min-w-40 h-12 w-full">
+<div class="flex w-full flex-1 items-stretch rounded-lg h-full">
+<div class="text-[#63886f] flex bg-[#f0f4f2] dark:bg-gray-800 items-center justify-center pl-4 rounded-l-lg border-r-0">
+<span class="material-symbols-outlined">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111813] dark:text-white focus:outline-0 focus:ring-0 border-none bg-[#f0f4f2] dark:bg-gray-800 focus:border-none h-full placeholder:text-[#63886f] dark:placeholder:text-gray-400 px-4 rounded-l-none border-l-0 pl-2 text-base font-normal leading-normal" placeholder="Pesquisar artigos, testemunhos..." value=""/>
+</div>
+</label>
+</div>
+<!-- Chips -->
+<div class="flex gap-3 p-3 flex-wrap pr-4">
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-primary/30 pl-4 pr-4 cursor-pointer">
+<p class="text-[#111813] dark:text-white text-sm font-medium leading-normal">Tudo</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f4f2] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4 cursor-pointer">
+<p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Artigos</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f4f2] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4 cursor-pointer">
+<p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Grupos de Apoio</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f4f2] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4 cursor-pointer">
+<p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Testemunhos</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f4f2] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4 cursor-pointer">
+<p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Para Dadoras</p>
+</div>
+<div class="flex h-8 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-[#f0f4f2] dark:bg-gray-800 hover:bg-gray-200 dark:hover:bg-gray-700 pl-4 pr-4 cursor-pointer">
+<p class="text-[#111813] dark:text-gray-200 text-sm font-medium leading-normal">Para Recetoras</p>
+</div>
+</div>
+<!-- Featured Section Header -->
+<h2 class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Em Destaque</h2>
+<!-- Featured Card -->
+<div class="p-4 @container">
+<div class="flex flex-col items-stretch justify-start rounded-xl @xl:flex-row @xl:items-start shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)] bg-white dark:bg-gray-800/50">
+<div class="w-full @xl:w-1/2 bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl @xl:rounded-l-xl @xl:rounded-tr-none" data-alt="Imagem de uma mãe a amamentar um bebé, com luz suave." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAaD4HQC0qondii9Ff4VAg6TwH0xbscgomlfoxLO3Wq0m89JA_Cppt-Krk2fediihQS2O8SLUks64IPQbm1PA8wDESx-MWHkxwU8x6Bvq2dCRFQKw1MR2CnkTsOES1dRDtKWtysEJBbd-t3lBpdnbELoKzuHnyWuu_JvS3emjlV80Qg0lSqdB1OSzcovtkiChUA2aGIMMS8hK0rXAhpy7o1Ez3dsw2qieedtr_mdm8wT6BMXt3dvjn2n6qVLjvkGkbJUrSVHJadv4rm");'></div>
+<div class="flex w-full @xl:w-1/2 min-w-72 grow flex-col items-stretch justify-center gap-2 p-4">
+<p class="text-[#63886f] dark:text-gray-300 text-sm font-normal leading-normal">Artigo do Mês</p>
+<p class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">Os Benefícios Incríveis do Leite Materno Doado</p>
+<p class="text-[#63886f] dark:text-gray-300 text-base font-normal leading-normal">Descubra como a sua doação pode transformar a vida de bebés prematuros e doentes.</p>
+<div class="flex items-center gap-3 justify-between pt-2">
+<a class="text-primary dark:text-primary/90 text-sm font-medium leading-normal hover:underline" href="#">Ler mais</a>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary text-[#111813] text-sm font-bold leading-normal hover:bg-primary/90">
+<span class="truncate">Ler Artigo</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Articles Section Header -->
+<h2 class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Artigos e Testemunhos</h2>
+<!-- Grid of Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2">
+<!-- Card 1 -->
+<div class="p-4 @container">
+<div class="flex h-full flex-col items-stretch justify-start rounded-xl shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)] bg-white dark:bg-gray-800/50">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Imagem de frascos de leite materno organizados." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOnZKrzC6bsv5vBD3L8JUD2C9NtRbjlwoAfGSbrHevOEl_MY-8BSF13cLSu-SduOgvC-qE44iT6NXUJuJdKyyiTrlloptVkgYjq6duSZ1WHy33lMKToLnLfdAQXrbGWScfk-YRoWI1kzMeP2v9UgeVlyZl-cmsV1bWecFyIpjHL6TlruqFWYpXfxBI3FYuFkLIqZ91v5ApqIynP-8mkClJnRExkbzWZnflzlftNWSwhOL99iFZAMYJTb1m-wlDpV86Ey0HfgMU_R4W");'></div>
+<div class="flex flex-1 flex-col items-stretch justify-between gap-1 p-4">
+<div>
+<p class="text-[#63886f] dark:text-gray-300 text-sm font-normal leading-normal">Artigo</p>
+<p class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">O Processo de Doação: Passo a Passo</p>
+<p class="text-[#63886f] dark:text-gray-300 text-base font-normal leading-normal pt-1">Um guia completo desde o registo até à recolha do leite.</p>
+</div>
+<a class="text-primary dark:text-primary/90 text-sm font-medium leading-normal pt-3 hover:underline" href="#">Ler mais</a>
+</div>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-4 @container">
+<div class="flex h-full flex-col items-stretch justify-start rounded-xl shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)] bg-white dark:bg-gray-800/50">
+<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Foto de uma mãe sorridente a segurar o seu bebé." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCA4S_auASiFNJ_lloodu2LJGFUpQRc7r12P_tr3FVCxJGm1nnnd2Ls-NUP_hpvGoqeKx-Wb35X8HPAIcNeMNibaaEWTAeF1SQVP3yPEarm9duwp_NiZIl8sfwfk6peq4G-R6n99lQfFM6A7ImIbMqQV7baGpDVeHmSthaKdjJe-k0GKI7_E6t0CDHte8QfP79Wpt-UKGDINo0FLjVJmZzfqV5M-WdkpNBlGEBDxsXeniiupJPb8x1ojfvuy3l9-vId_mAqtWAR_29Q");'></div>
+<div class="flex flex-1 flex-col items-stretch justify-between gap-1 p-4">
+<div>
+<p class="text-[#63886f] dark:text-gray-300 text-sm font-normal leading-normal">Testemunho</p>
+<p class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">"A minha jornada como dadora mudou a minha perspetiva."</p>
+<p class="text-[#63886f] dark:text-gray-300 text-base font-normal leading-normal pt-1">A história inspiradora da Maria sobre a sua experiência de doação.</p>
+</div>
+<a class="text-primary dark:text-primary/90 text-sm font-medium leading-normal pt-3 hover:underline" href="#">Ler mais</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Support Groups Section -->
+<div class="px-4 py-5">
+<h2 class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Grupos de Apoio e Organizações</h2>
+<div class="flex flex-col gap-4">
+<!-- Contact Item 1 -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-gray-800/50 shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)]">
+<div class="flex-1">
+<p class="text-[#111813] dark:text-white font-bold">Banco de Leite Humano de Lisboa</p>
+<p class="text-[#63886f] dark:text-gray-300 text-sm">Apoio a dadoras e recetoras na área da Grande Lisboa.</p>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-[#111813] dark:text-white dark:bg-primary/30 text-sm font-medium leading-normal hover:bg-primary/30 dark:hover:bg-primary/40" href="#">
+<span class="truncate">Contactar</span>
+</a>
+</div>
+<!-- Contact Item 2 -->
+<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-gray-800/50 shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)]">
+<div class="flex-1">
+<p class="text-[#111813] dark:text-white font-bold">Associação de Apoio à Amamentação</p>
+<p class="text-[#63886f] dark:text-gray-300 text-sm">Recursos e aconselhamento sobre amamentação e doação.</p>
+</div>
+<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-[#111813] dark:text-white dark:bg-primary/30 text-sm font-medium leading-normal hover:bg-primary/30 dark:hover:bg-primary/40" href="#">
+<span class="truncate">Saber mais</span>
+</a>
+</div>
+</div>
+</div>
+<!-- CTA Section -->
+<div class="p-4">
+<div class="flex flex-col md:flex-row items-center justify-between gap-4 p-6 rounded-xl bg-primary/20 dark:bg-primary/30">
+<div class="text-center md:text-left">
+<h3 class="text-[#111813] dark:text-white text-xl font-bold">Tem uma história para partilhar?</h3>
+<p class="text-[#63886f] dark:text-gray-300">A sua experiência pode inspirar outras mães. Envie-nos o seu testemunho!</p>
+</div>
+<button class="flex w-full md:w-auto min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-12 px-6 bg-primary text-[#111813] text-base font-bold leading-normal hover:bg-primary/90">
+<span class="truncate">Partilhe a Sua História</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</body></html>
