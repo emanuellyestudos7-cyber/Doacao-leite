@@ -70,9 +70,27 @@
 <button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity" href="cadastrar.html">
 <span class="truncate">Registe-se Agora</span>
 </button>
+<button class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
 </div>
 </div>
 </header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40 bg-background-light dark:bg-background-dark pt-20">
+<div class="flex flex-col items-center gap-6 p-6">
+<button class="absolute top-4 right-4 p-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<a class="text-xl font-medium hover:text-primary" href="#quem-pode-doar" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Quem Pode Doar</a>
+<a class="text-xl font-medium hover:text-primary" href="#beneficios" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Recursos e Apoio</a>
+<a class="text-xl font-medium hover:text-primary" href="#processo" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Processo</a>
+<a class="text-xl font-medium hover:text-primary" href="#faq" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Dúvidas</a>
+<button class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-black text-base font-bold tracking-wide" href="cadastrar.html">
+<span class="truncate">Registar para Doar</span>
+</button>
+</div>
+</div>
 <main class="flex flex-1 justify-center py-5">
 <div class="flex flex-col w-full max-w-4xl px-4 sm:px-6 lg:px-8 gap-16 md:gap-24">
 <!-- Hero Section -->

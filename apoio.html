@@ -18,6 +18,8 @@
             "primary": "#19e65e",
             "background-light": "#f6f8f6",
             "background-dark": "#112116",
+            "border-light": "#dce5df",
+            "border-dark": "#2a4534",
           },
           fontFamily: {
             "display": ["Lexend", "sans-serif"]
@@ -44,6 +46,46 @@
 </head>
 <body class="font-display bg-background-light dark:bg-background-dark">
 <div class="relative flex w-full flex-col group/design-root overflow-x-hidden">
+<!-- Header Fixo -->
+<header class="sticky top-0 z-50 flex items-center justify-center bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-solid border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between w-full max-w-6xl px-4 sm:px-6 lg:px-8 py-3">
+<div class="flex items-center gap-3">
+<div class="text-primary text-3xl">
+<span class="material-symbols-outlined">volunteer_activism</span>
+</div>
+<a href="index.html">
+<h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">Gota de Amor</h2>
+</a>
+</div>
+<nav class="hidden md:flex flex-1 justify-center items-center gap-8">
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="comodoar.html">Como Doar</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="apoio.html">Recursos e Apoio</a>
+<a class="text-sm font-medium leading-normal hover:text-primary transition-colors" href="contato.html">Contato</a>
+</nav>
+<div class="flex items-center gap-4">
+<a href="cadastrar.html" class="flex min-w-[84px] cursor-pointer items-center justify-center overflow-hidden rounded-full h-10 px-5 bg-primary text-black text-sm font-bold leading-normal tracking-[0.015em] hover:opacity-90 transition-opacity">
+<span class="truncate">Registe-se Agora</span>
+</a>
+<button class="md:hidden p-2" onclick="document.getElementById('mobile-menu').classList.toggle('hidden')">
+<span class="material-symbols-outlined text-3xl">menu</span>
+</button>
+</div>
+</div>
+</header>
+<!-- Mobile Menu -->
+<div id="mobile-menu" class="hidden md:hidden fixed inset-0 z-40 bg-background-light dark:bg-background-dark pt-20">
+<div class="flex flex-col items-center gap-6 p-6">
+<button class="absolute top-4 right-4 p-2" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="material-symbols-outlined text-3xl">close</span>
+</button>
+<a class="text-xl font-medium hover:text-primary" href="comodoar.html" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Como Doar</a>
+<a class="text-xl font-medium hover:text-primary" href="apoio.html" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Recursos e Apoio</a>
+<a class="text-xl font-medium hover:text-primary" href="contato.html" onclick="document.getElementById('mobile-menu').classList.add('hidden')">Contato</a>
+<a href="cadastrar.html" class="flex cursor-pointer items-center justify-center overflow-hidden rounded-full h-12 px-8 bg-primary text-black text-base font-bold tracking-wide" onclick="document.getElementById('mobile-menu').classList.add('hidden')">
+<span class="truncate">Registar para Doar</span>
+</a>
+</div>
+</div>
 <div class="layout-container flex h-full grow flex-col">
 <div class="flex flex-1 justify-center py-5 sm:px-6 md:px-10 lg:px-20 xl:px-40">
 <div class="layout-content-container flex flex-col max-w-[960px] flex-1">
@@ -103,67 +145,6 @@
 </button>
 </div>
 </div>
-</div>
-</div>
-<!-- Articles Section Header -->
-<h2 class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] px-4 pb-3 pt-5">Artigos e Testemunhos</h2>
-<!-- Grid of Cards -->
-<div class="grid grid-cols-1 md:grid-cols-2">
-<!-- Card 1 -->
-<div class="p-4 @container">
-<div class="flex h-full flex-col items-stretch justify-start rounded-xl shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)] bg-white dark:bg-gray-800/50">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Imagem de frascos de leite materno organizados." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAOnZKrzC6bsv5vBD3L8JUD2C9NtRbjlwoAfGSbrHevOEl_MY-8BSF13cLSu-SduOgvC-qE44iT6NXUJuJdKyyiTrlloptVkgYjq6duSZ1WHy33lMKToLnLfdAQXrbGWScfk-YRoWI1kzMeP2v9UgeVlyZl-cmsV1bWecFyIpjHL6TlruqFWYpXfxBI3FYuFkLIqZ91v5ApqIynP-8mkClJnRExkbzWZnflzlftNWSwhOL99iFZAMYJTb1m-wlDpV86Ey0HfgMU_R4W");'></div>
-<div class="flex flex-1 flex-col items-stretch justify-between gap-1 p-4">
-<div>
-<p class="text-[#63886f] dark:text-gray-300 text-sm font-normal leading-normal">Artigo</p>
-<p class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">O Processo de Doação: Passo a Passo</p>
-<p class="text-[#63886f] dark:text-gray-300 text-base font-normal leading-normal pt-1">Um guia completo desde o registo até à recolha do leite.</p>
-</div>
-<a class="text-primary dark:text-primary/90 text-sm font-medium leading-normal pt-3 hover:underline" href="#">Ler mais</a>
-</div>
-</div>
-</div>
-<!-- Card 2 -->
-<div class="p-4 @container">
-<div class="flex h-full flex-col items-stretch justify-start rounded-xl shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)] bg-white dark:bg-gray-800/50">
-<div class="w-full bg-center bg-no-repeat aspect-video bg-cover rounded-t-xl" data-alt="Foto de uma mãe sorridente a segurar o seu bebé." style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCA4S_auASiFNJ_lloodu2LJGFUpQRc7r12P_tr3FVCxJGm1nnnd2Ls-NUP_hpvGoqeKx-Wb35X8HPAIcNeMNibaaEWTAeF1SQVP3yPEarm9duwp_NiZIl8sfwfk6peq4G-R6n99lQfFM6A7ImIbMqQV7baGpDVeHmSthaKdjJe-k0GKI7_E6t0CDHte8QfP79Wpt-UKGDINo0FLjVJmZzfqV5M-WdkpNBlGEBDxsXeniiupJPb8x1ojfvuy3l9-vId_mAqtWAR_29Q");'></div>
-<div class="flex flex-1 flex-col items-stretch justify-between gap-1 p-4">
-<div>
-<p class="text-[#63886f] dark:text-gray-300 text-sm font-normal leading-normal">Testemunho</p>
-<p class="text-[#111813] dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">"A minha jornada como dadora mudou a minha perspetiva."</p>
-<p class="text-[#63886f] dark:text-gray-300 text-base font-normal leading-normal pt-1">A história inspiradora da Maria sobre a sua experiência de doação.</p>
-</div>
-<a class="text-primary dark:text-primary/90 text-sm font-medium leading-normal pt-3 hover:underline" href="#">Ler mais</a>
-</div>
-</div>
-</div>
-</div>
-<!-- Support Groups Section -->
-<div class="px-4 py-5">
-<h2 class="text-[#111813] dark:text-white text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3">Grupos de Apoio e Organizações</h2>
-<div class="flex flex-col gap-4">
-<!-- Contact Item 1 -->
-<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-gray-800/50 shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)]">
-<div class="flex-1">
-<p class="text-[#111813] dark:text-white font-bold">Banco de Leite Humano de Mamanguape</p>
-<p class="text-[#63886f] dark:text-gray-300 text-sm">Apoio a doadoras e recetoras na área da Grande Mamanguape.</p>
-</div>
-<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-[#111813] dark:text-white dark:bg-primary/30 text-sm font-medium leading-normal hover:bg-primary/30 dark:hover:bg-primary/40" href="#">
-<span class="truncate">Contactar</span>
-</a>
-</div>
-<!-- Contact Item 2 -->
-<div class="flex items-center justify-between p-4 rounded-xl bg-white dark:bg-gray-800/50 shadow-[0_0_4px_rgba(0,0,0,0.1)] dark:shadow-[0_0_4px_rgba(255,255,255,0.1)]">
-<div class="flex-1">
-<p class="text-[#111813] dark:text-white font-bold">Associação de Apoio à Amamentação</p>
-<p class="text-[#63886f] dark:text-gray-300 text-sm">Recursos e aconselhamento sobre amamentação e doação.</p>
-</div>
-<a class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-4 bg-primary/20 text-[#111813] dark:text-white dark:bg-primary/30 text-sm font-medium leading-normal hover:bg-primary/30 dark:hover:bg-primary/40" href="#">
-<span class="truncate">Saber mais</span>
-</a>
-</div>
-</div>
-</div>
 <!-- CTA Section -->
 <div class="p-4">
 <div class="flex flex-col md:flex-row items-center justify-between gap-4 p-6 rounded-xl bg-primary/20 dark:bg-primary/30">
@@ -177,7 +158,36 @@
 </div>
 </div>
 </div>
+<!-- Footer -->
+<footer class="bg-white dark:bg-gray-800/50 border-t border-border-light dark:border-border-dark mt-auto">
+<div class="mx-auto max-w-7xl px-4 py-8">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+<div>
+<div class="flex items-center gap-2 justify-center md:justify-start mb-4">
+<span class="material-symbols-outlined text-primary text-2xl">volunteer_activism</span>
+<h3 class="font-bold">Gota de Amor</h3>
+</div>
+<p class="text-sm text-[#63886f]">Conectando mães doadoras a bebés que precisam.</p>
+</div>
+<div>
+<h4 class="font-bold mb-4">Navegação</h4>
+<ul class="space-y-2 text-sm">
+<li><a class="hover:text-primary transition-colors" href="comodoar.html">Como Doar</a></li>
+<li><a class="hover:text-primary transition-colors" href="apoio.html">Recursos e Apoio</a></li>
+<li><a class="hover:text-primary transition-colors" href="contato.html">Contato</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold mb-4">Contacto</h4>
+<ul class="space-y-2 text-sm text-[#63886f]">
+<li>Email: Em breve</li>
+<li>Telefone: Em breve</li>
+</ul>
 </div>
 </div>
+<div class="mt-8 pt-8 border-t border-border-light dark:border-border-dark text-center text-xs text-[#63886f]">
+<p>© 2025 Gota de Amor. Todos os direitos reservados.</p>
 </div>
+</div>
+</footer>
 </body></html>
